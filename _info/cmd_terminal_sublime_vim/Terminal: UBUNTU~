@@ -1,0 +1,25 @@
+Terminal: CTRL+ALT+T
+
+ls — arata continutul din mapa in care te afli
+pwd - vezi in ce mapa te afli
+cd .. - cobori cu o mapa mai jos
+../.. cobori cu 2 sau mai multe nivele ../../..
+/$ cd /lib  --> cd /home/vlad --> ~$ (ma aflu in mapa mea "vlad")
+cd / - ma cobor deodata la root (/$)
+cd ~ - ma ridic deodata in mapa "vlad"
+clear - curata terminalul de text
+
+ls -lh  info despre continutul din mapa si marimea fisierelor
+ls -lht - sorteaza continutul din mape dupa data de creare
+ls -lhtr - sorteaza revers (invers)
+echo $vlad, $home etc - intri direct in mapa de oriunde te-ai afla
+
+introdu primele litere + tab : iti scrie tot textul din mapa
+
+
+gcc --version - verifica versia 
+
+IMPORTANT
+sudo apt-get update     
+sudo apt-get upgrade
+sudo apt-get install build-essential

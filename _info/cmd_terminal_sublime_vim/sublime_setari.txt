@@ -1,0 +1,16 @@
+
+
+setari: Preference --> Setings User
+
+{
+	"always_show_minimap_viewport": true,
+	"color_scheme": "Packages/Color Scheme - Default/Monokai.tmTheme",
+	"draw_minimap_border": true,
+	"font_size": 14,
+	"ignored_packages":
+	[
+		"Vintage"
+	]
+}
+
+

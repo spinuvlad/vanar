@@ -1,0 +1,54 @@
+i               redacteaza (scrie text)
+:w nume         save doc nou care am pus numele "nume"
+:q              - quit, iesire din redactor
+:q!             quit (no save)
+:x              quit (save)
+ctrl+z - ma intorc in terminal
+fg - din terminal ma intorc in redactor
+
+NAVIGARE:
+l - dreapta
+h - stanga
+k- sus
+j - jos
+w - misca cursorul un cuvant inainte
+e - misca cursorul la sfaristul cuvantului
+b - misca cursorul un cuvant in urma
+f+litera(simbol) - misca cursorul la simbol din rand. ";" - urmatorul simbol din rand. "," - un pas in urma
+$ - sfarsitul randului
+^ - inceputul randului
+gg - inceputul textului
+G - sfarsitul textului
+12G - mutare la randul 12
+H - inceputul textului vizibil in redactor
+L - sfarsitul textului vizibil in redactor
+M - mijlocul textului vizibil in redactor
+4H - al 4-lea rand de sus in textul vizibil
+5L - al 5-lea rand de jos in textul vizibil
+CTRL+f - down textului vizibil
+CTRL+b - undo textului vizibil
+
+dw - sterge cuvantul pe care sta cursorul
+dd - sterge tot randul
+d^ - sterge tot pana la inceputul randului
+d$ - sterge tot pana la sfarsitul randului
+5dd - sterge 5 randuri in jos de la cursor
+x - sterge simbolul de sub cursor
+
+u - anuleaza ultima redactare
+ctrl+r - intoarce la penultima redactare
+yy - copy
+p - paste
+
+r - schimba un simbol de sub cursor
+cw - sterge cuv dupa cursor si intra in regim "insert"
+/cuvant - gaseste cuvantul "cuvant" in text, apoi tasta "n" trece la urmatorul cuvant
+:s/mama/tata/ - cauta cuvantul "mama" si inlocuieste cu "tata"
+
+
+
+Adaugari:         
+:set nocp
+:set number
+:help set (mai multa info cu privire la comanda "set")
+

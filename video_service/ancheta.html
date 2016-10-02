@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>SV: ancheta</title>
+    <meta charset="utf-8">
+    <link href="Movies-icon.png" rel="icon">
+    <style>
+    table {
+      border-collapse: collapse;
+      border: 3px solid silver;
+
+    }
+    td, th {
+      padding: 10px;
+        border-radius: 15px 50px 30px 5px;
+
+    }
+      body {
+        background: lightgray;
+      }
+    </style>
+  </head>
+  <body>
+      <table>
+        <tr>
+          <td>
+      <form action="test.post.md" method="post" enctype="multipart/form-data">
+        <label>
+            Data nuntii:</td>
+              <td><select name="day">
+                <option value="no-day" selected>Ziua</option>
+                <option value="1">01</option>
+                <option value="2">02</option>
+                <option value="3">03</option>
+                <option value="4">04</option>
+                <option value="5">05</option>
+                <option value="6">06</option>
+                <option value="7">07</option>
+                <option value="8">08</option>
+                <option value="9">09</option>
+                <option value="10">10</option>
+                <option value="11">11</option>
+                <option value="12">12</option>
+                <option value="13">13</option>
+                <option value="14">14</option>
+                <option value="15">15</option>
+                <option value="16">16</option>
+                <option value="17">17</option>
+                <option value="18">18</option>
+                <option value="19">19</option>
+                <option value="20">20</option>
+                <option value="21">21</option>
+                <option value="22">22</option>
+                <option value="23">23</option>
+                <option value="24">24</option>
+                <option value="25">25</option>
+                <option value="26">26</option>
+                <option value="27">27</option>
+                <option value="28">28</option>
+                <option value="29">29</option>
+                <option value="30">30</option>
+                <option value="31">31</option>
+              </select></td>
+              <td><select name="mounth">
+                <option value="no-mounth" selected>Luna</option>
+                <option value="01">ianuarie</option>
+                <option value="02">februarie</option>
+                <option value="03">martie</option>
+                <option value="04">aprilie</option>
+                <option value="05">mai</option>
+                <option value="06">iunie</option>
+                <option value="07">iulie</option>
+                <option value="08">august</option>
+                <option value="09">septembrie</option>
+                <option value="10">octombrie</option>
+                <option value="11">noiembrie</option>
+                <option value="12">decembrie</option>
+              </select></td>
+              <td><select name="year">
+                <option value="no-year" selected>Anul</option>
+                <option value="2016">2016</option>
+                <option value="2017">2017</option>
+                <option value="2018">2018</option>
+                <option value="2019">2019</option>
+                <option value="2020">2020</option>
+              </select></td></tr></table>
+        </label><br>
+          <table>
+            <tr>
+              <th colspan="2">Date despre mire</th>
+            </tr>
+            <tr>
+              <td>
+                <label for="name-family-boy">
+                  Numele si familia:</label>
+              </td>
+              <td>
+                  <input type="text" id="name-family-boy" name="name_family_boy">
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <label for="age-boy">Varsta:</label>
+              </td>
+              <td>
+                <input type="number" id="age-boy" name="age_boy">
+              </td>
+              <tr>
+                <td>
+                  <label for="residence-boy">Locul de domiciliu:</label>
+                </td>
+                <td>
+                  <input type="text" id="residence-boy" name="residence_boy">
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <label for="contacts-boy">Date de contact:</label>
+                </td>
+                <td>
+                  <input type="text" id="contacts-boy" name="contacts_boy_fix" value="Fix:        "><br>
+                  <input type="text" name="contacts_boy_mob" value="Mob:    "><br>
+                  <input type="text" name="contacts_boy_email" value="Email:  "><br>
+                  <input type="text" name="contacts_boy_skype" value="Skype: ">
+              </td>
+            </tr>
+            <tr>
+            <td colspan="2">
+              <p>Incarca o fotografie:</p>
+              <input type="file" name="photo_boy">
+              <input type="submit" value="TRIMITE">
+            </td></tr>
+          </table>
+          <br>
+          <table>
+            <tr>
+              <th colspan="2">Date despre mireasa</th>
+            </tr>
+            <tr>
+              <td>
+                <label for="name-family-girl">
+                  Numele si familia:</label>
+              </td>
+              <td>
+                  <input type="text" id="name-family-girl" name="name_family_girl">
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <label for="age-girl">Varsta:</label>
+              </td>
+              <td>
+                <input type="number" id="age-girl" name="age_girl">
+              </td>
+              <tr>
+                <td>
+                  <label for="residence-girl">Locul de domiciliu:</label>
+                </td>
+                <td>
+                  <input type="text" id="residence-girl" name="residence_girl">
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <label for="contacts-girl">Date de contact:</label>
+                </td>
+                <td>
+                  <input type="text" id="contacts-girl" name="contacts_girl_fix" value="Fix:        "><br>
+                  <input type="text" name="contacts_girl_mob" value="Mob:    "><br>
+                  <input type="text" name="contacts_girl_email" value="Email:  "><br>
+                  <input type="text" name="contacts_girl_skype" value="Skype: ">
+                </td>
+              </tr>
+            </tr>
+            <tr>
+              <td colspan="2">
+                <p>Incarca o fotografie:</p>
+                <input type="file" name="photo_girl">
+                <input type="submit" value="TRIMITE">
+              </td>
+            </tr>
+          </table>
+      </form>
+  </body>
+</html>

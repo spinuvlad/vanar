@@ -1,0 +1,35 @@
+descarca compilator: www.mingw.org, apoi download installer (coltul drept de sus), in procesul de instalare, alege: mingw32-base si gcc-g++
+in mapa in care sa instalat compilatorul, gasim mapa "bin" si fisierl exe "gcc" - acesta este compilator (legatura dintre codul scris si procesorul central).
+pusk - control panel - sistema - dopolnitelinie parametri sistemi - peremenie sredi - alege "PATH", izmeniti, iar la sfarsit trebuie indicat drumul catre compilator C:\MinGW
+creaza mapa "c" pe discul c, in sublime alege File-Open Folder-mapa "c", apoi salveaza proiectul (ctrl+s) si denumeste cu extensia "*.c"
+ctrl+KB - ascunde si deschide bara cu fisiere si foldere
+
+
+Tipurile de date sunt necesare pentru a brona loc in memoria operativa pt lansarea programului.
+
+2 tipuri de date:
+ void - gol, nu este nimic, nu inseamna nimic, nu contine informatii, nu broneasa nimic in memoria operativa
+ char - character, ii spunem compilatorului cata memorie avem nevoi pt a indeplini aceatsa functie
+poate contine litere, cifre, simboluri etc
+char: contine cifre in diapazonul: -128 pana 127
+Litera "A" are codul zecimal in ascii "65", ceea ce intra in diapazonul -128 +127, deci litera A poate fi reprezentata de tipul "char"
+
+"char" nu poate include 2 litere concomitent: AB deoarece suma cifrelor in codul zecimal trece de diapazonul +127
+
+
+Fnctia Djin ()
+
+{
+	dorinta 1
+	dorinta 2
+	dorinta 3
+	intoarce: totul e ok!
+}
+
+Djin ()
+
+ () in paranteze se afla argumentele functiei - obligatorii
+ [] argumente neobligatorii, dupa dorinta
+
+ in loc de numele "functia" se indica un tip de date (void, char)
+ "Djin" - numele functiei

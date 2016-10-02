@@ -1,0 +1,13 @@
+CTRL+Shift+P
+Settings View:Open
++Install (partea stanga)
+validator -->w3c-validation (install)
+linter html -->linter-htmlhint (install)
+atom-beautify (install) -ALT+CTRL+B - aranjeaza frumos codul
+emmet: table>tr*4>td*2>a>img
+Configurare taste emmet: Packages>Emmet>Expand abbreviation
+Ctrl+/ - cometeaza randul sau portiunea de cod
+
+
+lorem100 - genereaza automayt un text cu 100 cuvinte
+wrap din CTRL+P - aranjeaza textul din rand nou

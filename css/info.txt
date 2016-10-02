@@ -1,0 +1,22 @@
+CSS - Cascading StyleSheets - Technology & language, are level (1, 2 , [3] > 4)
+
+forma css:
+
+prop1: val;
+prop2: val;
+prop3: val;
+prop-detaliu: val;
+prop-detaliu1-detaliu2: val;
+bmw: red;
+bmw-salon: red;
+bmw-salon-scaun: red;
+
+prop: val1 val2 val3 val4;
+prop: f() - indica o functie; intre "f" si"() - nu se lasa spatiu
+prop: val1, val2, val3; - daca nu este admisibila val1 browserul va executa val2, daca nu val3
+
+moduri de aplicare a HTML +CSS
+
+1. inline (incorporat)
+2. global (head)
+3. stil extern (fisier separat *.css)

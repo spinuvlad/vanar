@@ -1,0 +1,41 @@
+INSTALL GIT:
+1.download git from: https://git-for-windows.github.io/
+2.install this programm
+3.open cmd
+
+GIT CONFIG:
+1.git config --global user.name "Name Family"
+  git config --global user.email "my_email@domain.com"
+2.verify:
+  git config --list
+
+
+GIT COMMIT:
+1. open folder from commit in cmd
+2. git init                      - preparing files. initializarea fisierelor                                    care nu au fost incarcate niciodata
+3. git status                    - view preparing files
+4. git add .                     - "." add all files
+
+<daca am facut careva redactari in cod, git status ne va informa,
+in avest caz facem "git add nume_fisier.html" sau "git add .">
+
+5. git commit -m "comentariu"
+6. git status
+
+Incarcare pe github.com:
+1. creare cont
+2. creare repozitoriu nou
+3. denumeste repozitoriul
+4. adaugain cmd urmatoarele 2 linii care apar mai jos in pagina de github:
+…or push an existing repository from the command line
+
+
+Descarcare repozitoriu:
+Daca este calculator nou, indeplineste pasii din GIT CONFIG
+ git clone https://github.com/spinuvlad/video-service.git
+
+Incarcare schimbari:
+1. git add .
+2. git commit -m ""
+3. git push https://github.com/spinuvlad/vanar.git
+!!!Daca da eroare: git push origin master --force			

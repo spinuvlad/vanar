@@ -1,0 +1,17 @@
+forlmular - colecteaza date din partea utilizatorului si transmite pe server:
+inregistrare, logare, comentarii
+form / par
+input / singular, poate fi ca bifa sau camp de introducere a datelor, calendar etc
+textarea / pereche, camp textual cu mai multe randuri de introducere
+button / pereche, buton care se apasa si indeplineste diferite actiuni
+select>option / pereche merg impreuna, lista derulanta
+label / pereche, eticheta - descrie ce reprezinta campul de introducere a datelor - nu prea se foloseste
+
+caractere speciale: simboluri care nu se adauga direct. doar prin cod special:
+&lt; - <
+&gt; - >  . ex: pt a fisa in browser <h1>, cod: &lt;h1&gt;
+utf8icons.com - un sait cu simboluri
+
+ce inseamna raster vs vector - pe youtube. formatul *.svg
+vezi si tehnologia sprite
+<iframe> - incorpora din afara (pagina, player, service, youtube) in doc curent.

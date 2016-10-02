@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>search</title>
+</head>
+<body>
+ <form action="https://www.google.com/search" method="get"> <!--arata unde pleaca datele. datele din formular se transmit la server prin protocol http/https-->
+   <!-- GET - mai putin securizat
+       POST - mai bine securizat
+     name - camp care transporta date-->
+   <input type="text" name="q" size="50" placeholder="cuvinte cheie" maxlength="10" minlength="3" autofocus required><button>&#10148;</button> <!--&#10148; - cod pt icon sageata-->
+   <!-- placeholder - text sugerat in campul de introducere care autotat se sterge cand faci clik
+       autofocus, atribut fara parametri- automat se seteaza la cautare fara sa faci clik pe bara de cautare
+       required - camp obligatoriu
+       maxlength - lungimea maxima de caractere admise pt introducere
+       minlength - lungimea minima
+
+       pt setare sa caute pe google:
+       <form action="https://www.google.com/search" method="get">
+       <input type="text" name="q">, name="q" - obligatoriu care indica sa se foloseasca google
+
+cauta info:
+       iframe
+       microdata
+       microformats
+      -->
+ </form>
+</body>
+</html>

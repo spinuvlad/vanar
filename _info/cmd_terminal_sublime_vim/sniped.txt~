@@ -1,0 +1,63 @@
+creare de sniped
+
+<snippet>
+	<content><![CDATA[
+
+]]></content>
+	
+	 <tabTrigger>hello</tabTrigger> 
+	<description>salutare</description>
+	<scope>source.c99</scope>
+</snippet>
+
+***snippet pt functie
+
+<snippet>
+	<content><![CDATA[
+${1:type} ${2:name} (${3:void})
+{
+    ${5}
+	return ${4:variable};
+}
+]]></content>
+	
+	 <tabTrigger>f,fn,fct</tabTrigger> 
+	<description>Declare function</description>
+	<scope>source.c99</scope>
+</snippet>
+
+
+***main
+
+<snippet>
+	<content><![CDATA[
+#include <stdio.h>
+
+ ${1:void} ${2:main} (${3:void})
+{
+    ${5}
+	return${4};
+}
+]]></content>
+	
+	 <tabTrigger>main</tabTrigger> 
+	<description>main programm</description>
+	<scope>source.c99</scope>
+</snippet>
+
+
+***printf
+
+<snippet>
+	<content><![CDATA[
+
+
+ printf("${1:message}");
+    
+
+]]></content>
+	
+	 <tabTrigger>p,pf,print</tabTrigger> 
+	<description>printf</description>
+	<scope>source.c99</scope>
+</snippet>

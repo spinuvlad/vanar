@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Register Form</title>
+</head>
+<body>
+<br>
+<br>
+<br>
+<br>
+<table width="600" align="center" bgcolor="#EEEEEE" frame="border">
+  <tr>
+    <td>Username:<br>
+      <input type="text" name="username" value="" size="30" maxlength="12"> <!--lungimea maxima de caractere: 12 -->
+    </td>
+    <td>Email Adress:<br>
+      <input type="text" name="email" value="" size="30">
+    </td>
+  </tr>
+  <tr>
+    <td>Password:<br>
+      <input type="password" name="password" value="" size="30">
+    </td>
+    <td>Confirm password:<br>
+      <input type="password" name="password" value="" size="30">
+    </td>
+  </tr>
+  <tr>
+    <td>Location:<br>
+      <input type="text" list="cites" size="30">
+      <datalist id="cites">
+        <option value="Chisinau"></option>
+        <option value="Balti"></option>
+        <option value="Orhei"></option>
+        <option value="Edinet"></option>
+        <option value="Comrat"></option>
+      </datalist>
+    </td>
+    <td>Sex:<br>
+      <select>
+        <option>M</option>
+        <option>F</option>
+      </select>
+    </td>
+  </tr>
+  <tr>
+    <td colspan="2">
+      <input type="checkbox" name="checkbox" value=""> <small>I have read and agreed to the Orange Terms and Service</small>
+    </td>
+  </tr>
+  <tr>
+    <td colspan="2" align="center"><input type="button" name="Send" value="REGISTER"></td>
+  </tr>
+</table>
+
+</body>
+</html>

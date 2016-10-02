@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Orangetext</title>
+</head>
+<body>
+<br>
+<br>
+<br>
+<br>
+  <table align="center" width="600" cellpadding="100" background="background/bg.jpg">
+    <tr>
+      <td>
+        <table frame="border" align="center" width="400" bgcolor="#EEEEEE"> <!--width - latimea tabelului;
+                                                          frame - deseana granitele in jurul tabelului-->
+          <tr>
+            <td colspan="5" height="30">  <!--height - inaltimea celulei-->
+                Web SMS
+            </td>
+          </tr>
+          <tr>
+            <td width="80">
+              <b><small>De la:</small></b>
+            </td>
+            <td colspan="4">
+              <input type="text" name="name" value="websms" size="10">
+            </td>
+          </tr>
+          <tr>
+            <td width="80">
+              <b><small>Catre:</small></b>
+            </td>
+            <td colspan="2" width="180">
+              <input type="text" name="number" value="0XXXXXXX" size="10">
+            </td>
+            <td colspan="2" align="right">
+              <small>Au ramas</small>
+              <input type="text" name="number" value="1" size="1">
+            </td>
+          </tr>
+          <tr>
+            <td valign="top"> <!--aranjeaza textul in celula pe verticala; top - in frunte-->
+              <b><small>Mesajul:</small></b>
+            </td>
+            <td colspan="4"> <!-- textarea : rows - inaltimea in caractere; cols - latimea in caractere -->
+              <textarea name="message" rows="4" cols="38">
+              </textarea>
+            </td>
+          </tr>
+          <tr>
+            <td height="50"><b><small>Introduceti:</small></b></td>
+            <td colspan="3">
+              <img src="icon/codx.jpeg" alt="codx" width="100" align="center"/>
+
+              <input type="text" name="codx" size="4">
+            </td>
+            <td align="right">
+              <input type="button" name="send" value="trimite sms" size="2">
+          </td>
+          </tr>
+        </table>
+        <center><small>! Puteti expedia 5 mesaje scrise pe zi.</small><br><br>
+        <a href="reg.html"><input type="button" name="register" value="Register"></a>
+        </center>
+      </td>
+    </tr>
+
+  </table>
+</body>
+</html>

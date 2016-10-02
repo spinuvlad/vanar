@@ -1,0 +1,10 @@
+cd.. - un pas in urma
+cd "nume mapa" - intra in mapa cu "nume mapa"
+dir - afiseaza continutul mapei
+c:\c>gcc hello.c -o hello.exe - comanda spre compilare
+Dupa compilare cheama programa: hello.exe
+
+c:\c>gcc --help - afiseaza parametrii de lucru cu cmd
+
+dir /b - arata tot ce este in mapa fara diferite detalii
+F7 - deschide lista cu fisiere din mapa
