@@ -27,7 +27,7 @@ Incarcare pe github.com:
 2. creare repozitoriu nou
 3. denumeste repozitoriul
 4. adaugain cmd urmatoarele 2 linii care apar mai jos in pagina de github:
-…or push an existing repository from the command line
+ï¿½or push an existing repository from the command line
 
 
 Descarcare repozitoriu:
@@ -38,4 +38,7 @@ Incarcare schimbari:
 1. git add .
 2. git commit -m ""
 3. git push https://github.com/spinuvlad/vanar.git
-!!!Daca da eroare: git push origin master --force			
+!!!Daca da eroare: git push origin master --force
+sau
+git remote add origin https://github.com/spinuvlad/vanar.git
+git push -u origin master	
