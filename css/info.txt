@@ -20,3 +20,36 @@ moduri de aplicare a HTML +CSS
 1. inline (incorporat)
 2. global (head)
 3. stil extern (fisier separat *.css)
+
+* orice element are stiluri DEFAULT (browser)
+* elementele mostenest stiluri de la "parinte" h1>span  : span mosteneste stilul lui h1
+
+stilurile GLOBALE:
+*se adauga in <head>
+<head>
+<style>
+
+  selector1 {
+
+  }
+  selector2{
+
+  }
+
+</style>
+</head>
+
+<body>
+<elemente1 class="selector1"> </elemente1>
+<elemente2> </elemente2>
+<elemente3> </elemente3>
+</body>
+
+5 categorii de selectori (5 moduri de selectare):
+1. dupa tag;
+2. dupa clasa - o grupa de elemente cu proprietati comune;
+3. dupa id;
+4. pseudoselectori;
+5. advanced, complecsi
+
+/*media qery*/ - vezi!!!
