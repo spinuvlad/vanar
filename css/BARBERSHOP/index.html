@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Barbershop</title>
+</head>
+<body>
+  <header class="main__header">   <!-- shapka -->
+    <div class="container">   <!-- bloc care centreaza continutul din header -->
+      <nav class="main__navigation">   <!-- meniul din shapka-->
+        <ul>
+          <li>
+            <a href="#">Info</a>
+          </li>
+          <li>
+            <a href="#">News</a>
+          </li>
+          <li>
+            <a href="#">Price-list</a>
+          </li>
+          <li>
+            <a href="#">Shop</a>
+          </li>
+          <li>
+            <a href="#">Contact</a>
+          </li>
+        </ul>
+      </nav>
+      <div class="user__block">  <!-- camp de intrare pt user: sign in-->
+        <a class="login" href="#">Login</a>
+      </div>
+    </div>
+  </header>
+  <main class="container">  <!-- main: bloc GLOBAL intre header si footer -->
+    <div class="index__logo">  <!-- bloc pt logo -->
+      <img src="img/index-logo.png" width="368" height="204" alt="Barbershop, logo">
+    </div>
+    <section class="features">  <!-- urmeaza 3 sectiuni cu ceva info -->
+      <div class="features__item"> <!-- blocul sectiunii nr.1 -->
+        <b class="features__name">Fast</b>
+        <p>
+          Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim.
+        </p>
+      </div>
+      <div class="features__item">  <!-- blocul sectiunii nr.2 -->
+        <b class="features__name">Cool</b>
+        <p>
+          Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus.
+        </p>
+      </div>
+      <div class="features__item">  <!-- blocul sectiunii nr.3 -->
+        <b class="features__name">Expensive</b>
+        <p>
+          Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue.
+        </p>
+      </div>
+    </section>
+    <div class="index__content"> <!-- blocul de continut pentru pagina principala -->
+      <div class="index__content__left">  <!-- blocul noutati din stanga -->
+        <h2 class="index__content__title">News</h2>
+        <ul class="news__preview">
+          <li>
+            <p>
+              But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system, and expound the actual teachings of the great explorer of the truth, the master-builder of human happiness.
+            </p>
+            <time datetime="2016-10-04">4 august</time>
+          </li>
+          <li>
+            <p>
+              No one rejects, dislikes, or avoids pleasure itself, because it is pleasure, but because those who do not know how to pursue pleasure rationally encounter consequences that are extremely painful.
+            </p>
+            <time datetime="2016-10-01">1 august</time>
+          </li>
+        </ul>
+        <a class="" href="#">All news</a>
+      </div>
+      <div class="index__content_right">   <!-- blocul fotogalerie din dreapta -->
+        <h2 class="index__content__title">Photogallery</h2>
+        <div class="gallery">
+          <figure class="gallery__content">
+            <img src="img/photo-1.jpg" width="286" height="164" alt="">
+          </figure>
+          <button class="btn gallery__prev">Preview</button>
+          <button class="btn gallery__next">Next</button>
+        </div>
+      </div>
+    </div>
+      <div class="index__content">  <!-- blocul de continut pentru CONTACTE si INREGOSTRARE -->
+        <div class="index__content__left">
+          <h2 class="index__content__title">Contacts</h2>
+          <p>
+            Barbershop<br>
+            Adress: Chisinau, str. Voluntarilor, 14 <br>
+            Tel.: +373 (22) 41-81-87
+          </p>
+          <p>
+            Work time:<br>
+            Luni - Vineri: de la 10.00 pana la 22.00<br>
+            Sambata - Duminica: de la 10.00 pana la 19.00
+          </p>
+          <a class="btn" href="#">Maps</a>
+          <a class="btn" href="#">Feadback</a>
+        </div>
+        <div class="index__content__right">
+          <h2 class="index__content__title">Rergister</h2>
+          <p>
+            To take a trivial example, which of us ever undertakes laborious physical exercise, except to obtain some advantage from it
+          </p>
+          <form class="appointment__form" action="https://echo.htmlacademy.ru" method="post">
+            <input type="text" name="date" value="" placeholder="Date">
+            <input type="text" name="time" value="" placeholder="Time">
+            <input type="text" name="name" value="" placeholder="Your name">
+            <input type="tel" name="phone" value="" placeholder="Telephone">
+            <button class="btn" type="submit" name="button">Send</button>
+          </form>
+        </div>
+      </div>
+  </main>
+  <footer class="main__footer">
+    <div class="container">
+      <section class="footer__contacts">
+        Barbershop<br>
+        Adress: Chisinau, str. Voluntarilor, 14<br>
+        <a href="#">Find to me!</a><br>
+        Tel.: +373 (22) 41-81-87
+      </section>
+      <section class="footer__social">
+        <p>Friend</p>
+        <a class="social__btn social__btn__vk" href="#">vk</a>
+        <a class="social__btn social__btn__fb" href="#">Facebook</a>
+        <a class="social__btn social__btn__inst" href="#">Instagram</a>
+      </section>
+      <section class="footer__copyright">
+        <p>
+          Copyright:
+        </p>
+        <a class="btn" href="https://htmlacademy.ru">HTML Academy</a>
+      </section>
+    </div>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,24 @@
+Absolute:
+width: 1000px;
+font-size: 16px;
+
+Relative:
+width: 50%; --- (50% din elementul parinte)
+font-size: 2em; --- (indica marime text de 2 ori mai mare decat marimea textului parintelui) //nu se recomanda de folosit
+
+In rand:
+font-family: Arial, sans serif;
+
+Cuvinte cheie:
+text-transform: uppercase;
+text-align: center;
+display: block;
+color: red;
+
+Culori:
+color: #f00;                               format x16 prescurtat   f  0  0
+color: #ff0000;               //culoare in format x16              ff 00 00
+color: rgb(255, 0, 0);
+color: rgba(255, 0, 0, 0.5);  //0.5 - reduleaza nivelul de prozrachinosti !!SE RECOMANDA DE FOLOSIT in meniuri, butoane etc
+color: hsl(0, 100%, 50%);
+color: hsla(0, 100%, 50%, 0.5);

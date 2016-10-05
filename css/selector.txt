@@ -1,0 +1,13 @@
+  p{...}         --  tag
+
+  .text{...}     --  class
+
+  p.text {...}   --  tag & class
+
+  #text {...}    --  id
+
+  p#text {...}   --  tag & id
+
+  .text p {...}  --  alege toate tag-urile "p" IN INTERIORUL caruia se afla class "text" (se citeste de la dreapta spre stanga)
+
+  .text1 .text2 {...} --  alege elementele cu class "text2" IN INTERIORUL caruia se afla elemente cu class "text1" (se recoamnda 2 class, max 3)

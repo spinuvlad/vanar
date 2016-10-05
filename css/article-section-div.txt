@@ -1,0 +1,8 @@
+ARTICLE - tag folosit cu privire la ceva complet (ex.: un produs care contine foto/descriere/pret).
+acest bloc de cod <article>...</article> poate fi postat oriunde pe inet si va fi clar pe orice sait
+
+SECTION - pagia cu mai multe sectiuni: sectiunea fotogaleria produsului, sectiunea descrierea produsului, sectiunea pret,
+sectiunea cumpara etc. tag <section> nu poate fi publicat nicaieri altundeva, deoarece in afara saitului nostru isi pierde
+sensul.
+
+DIV - bloc care nu reprezinta nici o insemnatate deosebita decat un element decorativ de design
