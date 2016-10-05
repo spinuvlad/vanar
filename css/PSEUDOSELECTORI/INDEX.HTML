@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Pseudoselectori</title>
+  <style>
+#box{
+  /*container*/
+  width: 100px;
+  height: 100px;
+  background: radial-gradient(#a3a375, #ff80df, #99cc00, #00b300);
+  box-shadow: 0 0 4px 1px black;    /*umbra, pt proprietati priveste in documentatie*/
+  border-radius: 5px;
+  /*text*/
+  text-align: center;
+  line-height: 100px;   /*mai jos cu 100px*/
+}
+#box:hover{   /*se aplica cand apropii mouse-ul*/
+  background: radial-gradient(#a3a375, #99cc00);
+  width: 200px;
+  height: 200px;
+  box-shadow: 0 0 15px 1px red;
+  border-radius: 10px;
+  line-height: 200px;
+}
+  </style>
+</head>
+<body>
+  <div id="box">
+OK
+  </div>
+</body>
+</html>

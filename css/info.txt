@@ -52,4 +52,32 @@ stilurile GLOBALE:
 4. pseudoselectori;
 5. advanced, complecsi
 
-/*media qery*/ - vezi!!!
+/*media qery*/ - adaptivitate dupa diferite dispozitive
+
+PSEUDOSELECTORI - categorie speciala care extind posibilitatile de selectionare a elementelor.
+exemplu:
+  :pseudo{...}
+selector:pseudo {...} //pseudo - e ceva predefinit care nu poate fi modificat de utilizator
+1) pseudoselectori de stare:
+    :hover{...}
+    :activ{...}
+    :checked{...}
+    :focus{...}
+    :disabled{...}
+    ......
+2)structurale:
+    :first-child{...}
+    :last-child{...}
+    :nth-child{...}
+    .......
+3) logice:
+    :not(selector){...}    //not - exceptand ceea ce se afla in "()"
+    .......
+4) elemente - permite sa creezi elemnete virtuale, invizibile, neexistente initial in document:
+    ::before{...} - elemente virtuale pana la elementul indicat
+    ::after{...} - dupa elementul indicat
+5) selector (VENDOR):
+    ::-webkit-scrollbar // sustinut doar de chrome si safari
+    -webkit (chrome, safari, opera moderna)
+    -moz (firefox)
+    -ms (IE)

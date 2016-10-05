@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Pseudo2</title>
+  <style>
+  body{
+    margin: 0;
+  }
+    form{
+      background: linear-gradient( #99A, #77B);
+      padding: 10px;
+      box-shadow: 0 0 3px 1px red; /*umbra in afar spre jos*/
+    }
+    input{
+      box-shadow: inset 0 0 3px 1px red;  /*umbra in jurul chenarului de introduecre text*/
+      border: none; /*fara chenar vechi*/
+      padding: 3px;
+      border-radius: 30px;
+      color: #115;
+      outline: none; /*anuleaza dreptunchiul in jurul campului de introducere text*/
+      text-align: right; /*alinieaza textul in dreapta*/
+      width: 100px; /*latimea 100px*/
+      transition: 0.5s;  /*trece din starea de repaus in starea focus in 0,5 secunde*/
+    }
+    input::-webkit-input-placeholder{
+      color: green;}   /*schimba culoarea textului predefinit in camp*/
+    input:focus{
+      box-shadow: inset 0 0 3px 1px silver;
+      width: 400px; /*mareste campul in latime 400px*/
+      }
+    }
+  </style>
+</head>
+<body>
+  <form>
+    <input type="text" placeholder="Introdu ceva...">
+  </form>
+
+  <!--pe acasa: creaza o bifa nestandart <input type="checkbox">-->
+
+</body>
+</html>
