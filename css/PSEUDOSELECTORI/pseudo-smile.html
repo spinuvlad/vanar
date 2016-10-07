@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Pesudo SMYLE</title>
+  <style>
+  #smile{
+    background-color: yellow;
+    width: 40px;
+    height:15px;
+    text-align: right;
+    padding: 5px;
+    border-radius: 100% 100% 0 0;
+    color: green;
+  }
+  #smile:after{
+    display: block;  /*transforma din redim "inline" in inbox*/
+    content: "\25BC\25BC\25BC";
+    background-color: silver;
+    width: 40px;
+    height:15px;
+    padding: 5px;
+    border-radius: 0 0 100% 100%;
+    margin-left: -5px;
+  }
+  #smile:hover:after{  /*schimbari dupa ce apropii mousul*/
+    display: block;
+    content: "\25BC\25BC\25BC";
+    background-color: silver;
+    width: 40px;
+    height:15px;
+    padding: 5px;
+    border-radius: 0 0 100% 100%;
+    margin-left: -5px;
+    /*margin-top: 10px;*/
+    transition: 0.5s;
+    transform: rotate(15deg); /*rotire cu 15 grade*/
+    transform-origin: 5px 0;
+  }
+
+/*dorin.e.art@gmail.com subiect "vanar"*/
+
+  </style>
+</head>
+<body>
+  <div id="smile">&#10050;</div>
+
+</body>
+</html>

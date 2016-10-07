@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Checkbox Style</title>
+  <style>
+  input{
+    margin: 0;  /*ascunde inputul - bifa*/
+    height: 0;
+  }
+/*creeaza elemte virtuale*/
+input:after {
+  content: "\00a0\00a0\00a0\00a0";  /* \00a0 - spatiu in css */
+  border: 5px solid red;
+  border-left-width: 25px;    /* latimea partii din stanga a chenarului: 25px;*/
+  transition: 0.2s;
+  border-radius: 30px;
+  box-shadow: 0 0 3px darkred;
+  background-color: lightgray;
+  /* materializecss.com --> forms */
+}
+/*proprietati cand faci clik - chaked*/
+input:checked:after {
+  content: "\00a0\00a0\00a0\00a0";
+  border: 5px solid green;  /*schimbam culoarea in verde cand faci klik*/
+  border-right-width: 25px; /*deplasarea cand faci klic*/
+  box-shadow: 0 0 3px green;
+  background-color: lightgreen;
+}
+  </style>
+</head>
+<body>
+
+  <input type="checkbox">
+
+
+</body>
+</html>
