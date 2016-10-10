@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Pesudo SMYLE</title>
+  <title>Pesudo SMiLE</title>
   <style>
   #smile{
     background-color: yellow;
@@ -13,8 +13,8 @@
     border-radius: 100% 100% 0 0;
     color: green;
   }
-  #smile:after{
-    display: block;  /*transforma din redim "inline" in inbox*/
+  #smile:after{  /*after - creeaza element virtual care nu se vede; optiuenea "display:block" - face vizibil acest element virtual*/
+    display: block;  /*transforma din regim "inline" in inbox*/
     content: "\25BC\25BC\25BC";
     background-color: silver;
     width: 40px;

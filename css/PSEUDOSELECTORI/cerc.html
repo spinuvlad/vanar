@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>round</title>
+
+<style>
+
+#round__big{
+  padding-left: 20px;
+  padding-top: 20px;
+  background-color: red;
+  width: 80px;
+  height: 80px;
+
+
+}
+#round__small{
+  background-color: silver;
+  width: 60px;
+  height: 5px;
+  border-radius: 70% 70% 0 0; /*vezi optiunea transform: rotateX(50deg)*/
+
+}
+#round__small:after{
+  display: block;
+  content:" ";
+  background-color: silver;
+  width: 5px;
+  height: 60px;
+  border-radius: 0 70% 70% 0;
+  float: right;
+}
+
+</style>
+
+</head>
+<body>
+
+  <div id="round__big">
+    <div id="round__small">
+    </div>
+  </div>
+
+</body>
+</html>
