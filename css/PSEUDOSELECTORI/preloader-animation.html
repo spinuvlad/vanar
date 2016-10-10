@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Preloader</title>
+</head>
+<style>
+body{
+  margin: 0;
+  padding-top: 20%;
+  padding-left: 50%;
+
+}
+
+  .dot{
+    background-color: green;
+    width: 15px;
+    height: 15px;
+    border-radius: 100%;
+    float:left;
+    margin: 0 6px 20px 6px;
+  }
+  .dot:first-child{  /*adresare la primul element copil - prima bila*/
+    margin-left: 0;
+    animation: lift 2.5s infinite;
+  }
+  .dot:nth-child(2){
+    animation: lift 2.5s 0.5s infinite; /*retinere cu 1sec*/
+  }
+  .dot:nth-child(3){ /*3-adresare la al3-lea element copil*/
+    animation: lift 2.5s 1s infinite;
+  }
+  .dot:nth-child(4){
+    animation: lift 2.5s 1.75s infinite;
+  }
+  .dot:last-child{ /*last-adresare la ultimul element copil*/
+    margin-right: 0;
+    animation: lift 2.5s 2s infinite;
+  }
+  #preloader{
+  width: 123px;
+  height: 15px;
+  background-color: silver;
+  margin-top: -7px;
+  margin-left: -62px;
+  }
+  @keyframes lift{
+    0%{margin-top: 0px;}
+    10%{margin-top: -20px;}
+    20{margin-top: 0px;}
+    100{margin-top: 0px;}
+  }
+</style>
+<body>
+  <div id="preloader">
+    <div class="dot"></div>
+    <div class="dot"></div>
+    <div class="dot"></div>
+    <div class="dot"></div>
+    <div class="dot"></div>
+  </div>
+
+</body>
+</html>
+
+<!-- marire si micsorare cerc de la centru prin "transform: scale (0.5)" 0.5 - micsoare cu 50%-->

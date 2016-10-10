@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>animation</title>
+  <style>
+
+  #ball{
+    background: radial-gradient(white, blue);
+    border-radius: 100%;
+    width: 100px;
+    height: 100px;
+    animation: fall 10s ease-in; /*chemarea nimatie fall si "ease-in" - accelerare*/
+  }
+/*cadrele animatiei*/
+@keyframes fall{   /*fall - nume propriu*/
+  0% { margin-top: 0px; height: 100px;}
+  45%{ margin-top: 490px; height: 100px;}
+  50%{ margin-top: 500px; height: 10px;}
+  100%{ margin-top: 500px; height: 10px;}
+}
+  body{
+
+  }
+
+  </style>
+</head>
+<body>
+  <div id="ball">
+
+  </div>
+
+</body>
+</html>
+
+<!--  @constructie(){}
+
+
+
+    /*animatia*/
+    @keyframes denumire__animatie{
+      /*cadrele*/
+
+    }
+  -->
