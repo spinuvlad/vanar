@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>complex</title>
+  <style>
+
+    body{
+      color: green;
+      font-size: 25pt;
+      background-color: black;
+    }
+    body>div{  /*se aplica doar div-ului global - e unul*/
+      background-color: gray;
+      width: 400px;
+      height: 400px;
+    }
+    body>div>div { /*div de generatia3*/
+      background-color: white;
+      margin: 5px;
+      width: 190px;
+      height: 190px;
+      float: left;
+    }
+    body>div>div>div{
+      margin: 5px;
+      background-color: brown;
+      width: 85px;
+      height: 85px;
+      float: left;
+      text-align: center;
+      line-height: 85px; /*centreaza pe inaltime: mijlocul la 85px*/
+    }
+    body>div>div:first-child>div:first-child{
+      background-color: orange;
+    }
+    body>div>div:last-child>div:last-child{
+      background-color: blue;
+    }
+    body>div>div:first-child>div:last-child{
+      background-color: yellow;
+    }
+    body>div>div:last-child>div:first-child{
+      background-color: silver;
+    }
+    body>div>div:last-child>div:first-child+div{
+      border-radius: 10px;
+    }
+    body>div>div:first-child+div+div>div:first-child+div+div{
+      border-radius: 100%;
+    }
+  </style>
+</head>
+<body>
+  <div>
+    <div>
+      <div>1</div>
+      <div>2</div>
+      <div>3</div>
+      <div>4</div>
+    </div>
+    <div>
+      <div>5</div>
+      <div>6</div>
+      <div>7</div>
+      <div>8</div>
+    </div>
+    <div>
+      <div>9</div>
+      <div>10</div>
+      <div>11</div>
+      <div>12</div>
+    </div>
+    <div>
+      <div>13</div>
+      <div>14</div>
+      <div>15</div>
+      <div>16</div>
+    </div>
+  </div>
+</body>
+</html>
+
+<!-- flukeout.github.io - antrenare -->

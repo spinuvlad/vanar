@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Selectori Complecsi</title>
+</head>
+<style>
+
+  /* SELECTORI AVANSATI:
+      combina toti ceilalti selectori:
+
+      1) mostenitorul direct,calea prin ierarhie,
+      stilurile se aplica "sel3". celelalte sel1 si 2 reprezinta calea spre sel3
+      sel1>sel2>sel3{}
+      lincurile care sunt in paragraf si p in div
+
+      2) mostenitor care poate scapa nuele din rarhie. se intalneste mai des
+      sel1 sel2 sel3{} - stilurile se aplica "sel3"
+
+      3)invecinat (next sibling)
+      sel1+sel2+sel3{} - se aplica sel3 numai daca alaturi este sel1 si sel2
+
+      4) grupare (grouping)
+      sel1, sel2, sel3{}
+      toti selectori indicati primesc stiluri
+
+      5) dupa tribut (atribute selector)
+      [attribut="val"]{}
+      [width="300"]{}
+      [src="1.jpg"]{}
+
+      6) de intersectare (intersection)
+      sel1sel2sel3{}
+      se aleg elementele care ai in ei sel1,2,3 impreuna
+      a.my:hover - se plica in link cu classa "my" si apropiere mouse
+
+      7) * asterikc(all selector)
+      *{} selecteaza toate tagurile, clasele, id-urile etc
+
+  */
+
+
+</style>
+<body>
+  <!--
+  exemplu 1
+div>p>a{
+se coloareaza linkurile care sunt in p si div
+}
+
+  <div>
+    <p><a href=""></a></p>
+    <p><a href=""></a></p>
+  </div>
+  <p><a href=""></a><a href=""></a></p>
+  <p><a href=""></a><a href=""></a></p> -->
+
+<!-- exemplu 2
+div a{
+  toate link-urile se vor colora
+}
+<div>
+  <p><a href=""></a></p>
+  <p><a href=""></a></p>
+</div>
+<div><a href=""></a></div>
+<div><a href=""></a></div> -->
+
+<!-- exemplu 3
+p+p{color:red}
+
+<h1></h1>
+<p></p>
+<p red></p>
+
+<h2></h2>
+<p></p>
+<p red></p>
+<p red></p>
+
+<h2></h2>
+<p></p>
+<p red></p> -->
+
+
+
+</body>
+</html>
