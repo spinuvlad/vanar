@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Pulse animation</title>
+  <style>
+body{
+  margin:20% 20%;
+}
+.container{
+  margin: 0;
+  width: 128px;
+  height: 34px;
+}
+.row{
+  width: 128px;
+  height: 34px;
+  margin-bottom: -1px;
+}
+.round{
+  background-color: white;
+  width: 30px;
+  height: 30px;
+  border-radius: 100%;
+  float:left;
+  margin: 1px;
+}
+.efect1 {
+  animation: game 1s infinite;
+  box-shadow: 0 0 20px #ccff66;
+  background: radial-gradient(#669900,#ccff66)
+}
+.efect2 {
+  animation: game 1.5s infinite;
+  box-shadow: 0 0 20px #ffc266;
+  background: radial-gradient(#e68a00,#ffc266)
+}
+.efect3 {
+  animation: game 2s infinite;
+  box-shadow: 0 0 20px #ff8080;
+  background: radial-gradient(#ff0000, #ff8080)
+}
+.efect4 {
+  animation: game 3.5s infinite;
+  box-shadow: 0 0 20px #80b3ff;
+  background: radial-gradient(#005ce6,#80b3ff)
+}
+.efect5 {
+  animation: game 4s infinite;
+  box-shadow: 0 0 20px #ff80bf;
+  background: radial-gradient(#e60073,#ff80bf)
+}
+.efect6 {
+  animation: game 4.5s infinite;
+  box-shadow: 0 0 20px #ffff66;
+  background: radial-gradient(#ffff00, #ffff66)
+}
+.efect7 {
+  animation: game 5s infinite;
+  box-shadow: 0 0 20px #ff9f80;
+  background: radial-gradient(#ff531a, #ff9f80)
+}
+.efect8 {
+  animation: game 5.5s infinite;
+  box-shadow: 0 0 20px #e0e0d1;
+  background: radial-gradient(#999966, #e0e0d1)
+}
+@keyframes game {
+  0% { transform: scale(1.0)}
+  5% { transform: scale(0.9)}
+  10% { transform: scale(0.8)}
+  15% { transform: scale(0.7)}
+  20% { transform: scale(0.6)}
+  25% { transform: scale(0.5)}
+  30% { transform: scale(0.4)}
+  35% { transform: scale(0.3)}
+  40% { transform: scale(0.2)}
+  45% { transform: scale(0.1)}
+  50% { transform: scale(0.0)}
+  55% { transform: scale(0.1)}
+  60% { transform: scale(0.2)}
+  65% { transform: scale(0.3)}
+  70% { transform: scale(0.4)}
+  75% { transform: scale(0.5)}
+  80% { transform: scale(0.6)}
+  85% { transform: scale(0.7)}
+  90% { transform: scale(0.8)}
+  95% { transform: scale(0.9)}
+  100% { transform: scale(1.0)}
+}
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="row">
+      <div class="round efect1"></div>
+      <div class="round efect2"></div>
+      <div class="round efect7"></div>
+      <div class="round efect4"></div>
+    </div>
+    <div class="row">
+      <div class="round efect5"></div>
+      <div class="round efect8"></div>
+      <div class="round efect7"></div>
+      <div class="round efect1"></div>
+    </div>
+    <div class="row">
+      <div class="round efect3"></div>
+      <div class="round efect6"></div>
+      <div class="round efect8"></div>
+      <div class="round efect4"></div>
+    </div>
+    <div class="row">
+      <div class="round efect2"></div>
+      <div class="round efect5"></div>
+      <div class="round efect6"></div>
+      <div class="round efect3"></div>
+    </div>
+  </div>
+</body>
+</html>

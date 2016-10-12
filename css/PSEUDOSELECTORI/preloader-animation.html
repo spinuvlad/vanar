@@ -9,7 +9,6 @@ body{
   margin: 0;
   padding-top: 20%;
   padding-left: 50%;
-
 }
 
   .dot{
@@ -25,7 +24,7 @@ body{
     animation: lift 2.5s infinite;
   }
   .dot:nth-child(2){
-    animation: lift 2.5s 0.5s infinite; /*retinere cu 1sec*/
+    animation: lift 2.5s 0.5s infinite; /*retinere cu 0.5 sec*/
   }
   .dot:nth-child(3){ /*3-adresare la al3-lea element copil*/
     animation: lift 2.5s 1s infinite;
@@ -47,8 +46,8 @@ body{
   @keyframes lift{
     0%{margin-top: 0px;}
     10%{margin-top: -20px;}
-    20{margin-top: 0px;}
-    100{margin-top: 0px;}
+    20%{margin-top: 0px;}
+    100%{margin-top: 0px;}
   }
 </style>
 <body>
