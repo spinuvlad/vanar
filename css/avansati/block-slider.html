@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Slider</title>
+  <style>
+    body{
+      background-color: black;
+    }
+    #slider{
+      border: 10px solid white; /*grosimea tipul-liniei culoare*/
+      height: 500px;
+      background-image: url(winter.jpg);
+      background-size: 100% auto; /*latime inaltime*/
+      background-repeat: no-repeat;
+      background-position: center;
+    }
+    #slider .title{ /*din interirorul slider alege title*/
+      background: rgba(81, 104, 148, 0.41);
+      margin-top: 200px;
+      padding: 20px;
+      color: white;
+      font-size: 25px;
+      font-family: Arial;
+      box-shadow: 0 0 8px 4px rgba(76, 104, 151, 0.92);
+      text-shadow: 0 0 5px black; /*umbra textului*/
+      margin-bottom: 25px; /*impinge vecinul de jos cu 25 px*/
+      text-align: center;
+    }
+  #slider .paginator{
+    padding: 5px;
+    text-align: center;
+  }
+  #slider .paginator a{
+    text-decoration: none;
+    color: white;
+    font-size: 25px;
+    text-shadow: 0 0 5px black;
+  }
+  #slider .paginator .active{
+    color: #3f5a86;
+
+  }
+  </style>
+</head>
+<body>
+  <!-- content (width; height) - obiectul
+  padding (top, rught, bottom, left)- distanta de la perete la obiect
+  border (top, rught, bottom, left)- peretii casei
+  margin (top, rught, bottom, left)- pamant in jurul casei (curte)
+
+  flow/flux - mersul normal al elementelor
+  impinge elementele de sus in jos si de la stanga spre dreapta -->
+
+<div id="slider">
+  <div class="title">
+    <h2>Ce frumoasa este iarna!</h2>
+  </div>
+  <div></div>
+  <div class="paginator">
+    <a href="" class="active">&#9679;</a>
+    <a href="">&#9679;</a>
+    <a href="">&#9679;</a>
+    <a href="">&#9679;</a>
+    <a href="">&#9679;</a>
+  </div>
+</div>
+</body>
+</html>
+<!-- patternify.com - background personalizat -->
