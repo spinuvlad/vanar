@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>slider</title>
+
+<style>
+body{
+  background:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAUAAAAFCAYAAACNbyblAAAAFklEQVQImWNgYGDwxYIhBBIgQxAFAwD12QTRVLiy4QAAAABJRU5ErkJggg==)
+  repeat;
+  margin-left: 30%;
+  margin-top: 50px;
+
+
+}
+#slider{
+  background-color: white;
+  border: 5px solid #6b6b47;
+  width: 900px;
+  height: 600px;
+  padding: 15px;
+}
+#slider .next{
+  height: 100px;
+  background-color: white;
+  margin-left: -70px;
+  margin-right: -70px;
+  margin-top: -350px;
+
+}
+#slider .next .next__left{
+  height: 93px;
+  width: 100px;
+  background-color: transparent;
+  float:left;
+  border-radius: 100%;
+  border: 5px solid #6b6b47;
+  border-top-color: transparent;
+  border-right-color: transparent;
+  transform: rotate(48deg);
+}
+#slider .next .next__right{
+  height: 100px;
+  width: 100px;
+  background-color: blue;
+  float:left;
+}
+</style>
+
+</head>
+<body>
+  <div id="slider"><img src="movie.jpg" alt="movie"/>
+    <div class="next">
+      <div class="next__left"></div>
+      <div class="next__right"></div>
+    </div>
+    <div class="paginator"></div>
+  </div>
+</body>
+</html>
