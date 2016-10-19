@@ -1,0 +1,54 @@
+body{
+  margin: 0;
+  font-family: Arial;
+}
+
+#top__menu{
+  background-color: #4CAF50;
+  height: 57px;
+}
+#top__menu ul{
+  margin: 0;
+  list-style: none; /*anuleaza punctele in li*/
+  padding: 0; /*anuleaza margina din dreapta la li*/
+
+}
+#top__menu a{
+  text-decoration: none;
+}
+#top__menu ul:first-child{
+  float:left;
+}
+#top__menu ul:last-child{
+  float:right;
+  margin-right: 20px;
+}
+#top__menu li{
+  float:left;
+  font-size: 20px;
+  color: white;
+  line-height: 57px; /*aranjeaza la mijlocul inaltimei*/
+  padding-left: 20px;
+}
+#top__menu ul:first-child li:hover{ /*schimba culoarea cand apropii mousul*/
+  color: blue;
+  cursor: pointer; /*cursorul in forma de deget*/
+  background-color: white;
+}
+#top__menu ul:last-child li:hover{ /*schimba culoarea cand apropii mousul*/
+  color: blue;
+  cursor: pointer; /*cursorul in forma de deget*/
+}
+/*prioritatea stilurilor*/
+/* 1) - ultimul castiga (egal in greutate) */
+/* 2) - greutatea depide de metoda de selectie
+parinte(mostenire) < default < tag < .class < #id < inline
+tag - +1
+.class/:pseudo - +10
+#id - +100
+inline - +1000
+*/
+/* selector{
+proprietate: val !important;
+}
+*/

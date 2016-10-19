@@ -24,7 +24,7 @@ body{
 }
 #slider .next{
   height: 100px;
-  background-color: white;
+  background-color: transparent;
   margin-left: -70px;
   margin-right: -70px;
   margin-top: -350px;
@@ -33,19 +33,20 @@ body{
 #slider .next .next__left{
   height: 93px;
   width: 100px;
-  background-color: transparent;
+  background-color: white;
   float:left;
   border-radius: 100%;
   border: 5px solid #6b6b47;
-  border-top-color: transparent;
-  border-right-color: transparent;
-  transform: rotate(48deg);
+
 }
 #slider .next .next__right{
-  height: 100px;
+  height: 93px;
   width: 100px;
-  background-color: blue;
-  float:left;
+  background-color: white;
+  float:right;
+  border-radius: 100%;
+  border: 5px solid #6b6b47;
+
 }
 </style>
 
@@ -53,8 +54,8 @@ body{
 <body>
   <div id="slider"><img src="movie.jpg" alt="movie"/>
     <div class="next">
-      <div class="next__left"></div>
-      <div class="next__right"></div>
+      <div class="next__left">left</div>
+      <div class="next__right">right</div>
     </div>
     <div class="paginator"></div>
   </div>
