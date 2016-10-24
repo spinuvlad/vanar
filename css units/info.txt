@@ -1,0 +1,48 @@
+2 categorii de unitati de masura: ABLOSUTE, RELATIVE
+ABSOLUTE:
+cm - varianta pt printer
+mm - varianta pt printer
+in (inches) - varianta pt printer
+px * (relativ to the viewing device)
+pt - points - nu se foloseste, nu este unitate sigura
+pc - licas - nu se foloseste
+
+RELATIVE:
+% - tot ce tine de text se masoara size fata de elementul parinte
+
+em - se ea fata de parinte (1em - o majuscula; 2em - marimea de 2 majuscule)
+font-size: 4em; - inaltime de 4 litrere margin-left
+padding: 2em - citeste marimea "4m" de mai sus si o inmulteste cu 2
+concluzie:pading, margin, width - se masoara fata de elementul actual.
+
+rem = em, insa se masoara fata de elementul radacina (root element);
+caniuse.com - verifici compatibilitatea browserelor la moment
+
+vw - viewport (se masoara in % - latimea) (in raport cu fereasta browserului sau ecran tel)
+vh - asemenea vw insta masoara inaltimrea
+
+vmin - fata de latura minimala a ferestrei/device
+vmax - latura max fata de fereastra /device
+
+ex - jumatate din em
+
+ch - in raport cu latimii cifrei "0"
+
+se foloseste deobicei:
+absolute  (px)
+relative (%, em, rem, toate v...)
+
+
+deg (grade)/rad (radiani):
+rotate(); skew(); rotate3d();... transform();
+
+CULORI:
+
+As RGB values          ->  rgb(r,g,b)  0..255
+RGBA                  rgba(r,g,b,a) 0..255, 0..1(transparenta)
+As hexadecimal values  -> #000 ... #FFF sau #FFFFFF
+As HSL values (CSS3)  -> hue saturation lighing   --> hsl(h,s,l)
+HSLA - la fel ca HSL + transparenta
+As HWB values (CSS4)
+
+Sa citim de pozitionare: position
