@@ -1,0 +1,39 @@
+4 scheme de pozitionare:
+
+POZITION - un mod de amplasare a lementului fata de ecran, parinte sau de elementele invecinate si chiar fata de sine
+
+1. static - schema default
+    - se respecta fluxul de aranjare a elementelor(inline, block)
+    - elementele isi ocupa locul in rand unul dupa altul;
+    - elementele interactioneaza intre ele;
+    - este posibil a suprapune elementele:
+         *copilul se suprapune peste parinte;
+         *vecinul curent cu cel precedent (prin margin negativ)
+
+2. relative
+    - mosteneste toate proprietatile schemei statice;
+    + poate fi deplasat fata de pozitia lui initiala cu ajutorul coordonatelor:
+        *top, right, bottom, left fara a afecta elementele din preajma;
+    se foloseste pt a deplasa obiectul LOCAL(in apropiere)
+
+    z-index - indica cum se va afisa elementul (sub/deasupra altor elemente)
+    cu cat num intre deste mai mare(elementul iese in fata); negativ(in spate)
+    din start toate elementele au z-index: 0;
+
+3. absolute
+    - un element independent fata de toate elementele din jur.
+       elementul este mutat intr-o fereastra proprie, iar toate celelalte elemente trec dedesubt;
+    - se aplica aceleasi 4 coordonate insa se masoara de la marginea ferestrei (dreapta jos)
+    - poate fi utilizat z-index
+    - daca macar unul dintre parintii elementului pozitionat absolut nu este pozitionat static, atunci
+    coordonatele se masoara fata de acest parimte;
+
+4. fixed
+    - mosteneste toate proprietatile de la schema absoluta;
+    - se deosebeste de "absoluta": elementul ramane fixat in coordonatele fixate chiar daca se
+        sechimba fereasta (deruleaza)
+        -coordonatele se masoarea de la fereastra
+
+5. !!! sticky
+
+http://developer.mozilla.org - documentatie excelenta in engleza
