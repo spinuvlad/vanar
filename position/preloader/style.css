@@ -1,0 +1,91 @@
+.preloader{
+  width: 200px;
+  height: 100px;
+  border: 1px dotted red;
+  position: relative;
+}
+body{
+  background-color: #000;
+}
+.big{
+  width: 80px;
+  height: 80px;
+  border: 10px solid green;
+  border-radius: 100%;
+  position: absolute;
+  right: 25px;
+}
+.big:after{   /*acopera o bucata imprejur la cercul mare*/
+  content: "";
+  border: 3px solid transparent;
+  border-left-color: black;
+  transform: rotate(45deg);
+  width: 100px;
+  height: 100px;
+  display: block;
+  border-radius: 100%;
+  position: absolute;
+  top: -13px;
+  left: -13px;
+  z-index: 1;
+}
+.big:before{  /*elementul care se roteste in cercul mare*/
+  content: "";
+  display: block;
+  width: 80px;
+  height: 80px;
+  border: 10px solid lightgreen;
+  border-top-color: transparent;
+  border-left-color: transparent;
+  top: -10px;
+  left: -10px;
+  border-radius: 100%;
+  position: absolute;
+  animation: spin-right 1.8s linear infinite;
+
+}
+.small{
+  width: 40px;
+  height: 40px;
+  border: 10px solid green;
+  border-radius: 100%;
+  position: absolute;
+  left: 25px;
+  top: 20px;
+}
+.small:after{ /*acopera o bucata in jurul cercului mic*/
+  content: "";
+  border: 3px solid transparent;
+  border-left-color: black;
+  transform: rotate(-135deg);
+  width: 60px;
+  height: 60px;
+  display: block;
+  border-radius: 100%;
+  position: absolute;
+  top: -13px;
+  left: -13px;
+  z-index: 1;
+}
+.small:before{
+  content: "";
+  display: block;
+  width: 40px;
+  height: 40px;
+  border: 10px solid lightgreen;
+  border-top-color: transparent;
+  border-left-color: transparent;
+  border-radius: 100%;
+  position: absolute;
+  left: -10px;
+  top: -10px;
+  animation: spin-left 3s linear infinite;
+}
+@keyframes spin-right{
+  from{transform: rotate(0deg);}
+    to{transform: rotate(360deg);}
+}
+@keyframes spin-left{
+  from{transform: rotate(0deg);}
+    to{transform: rotate(360deg);}
+}

@@ -12,7 +12,7 @@ POZITION - un mod de amplasare a lementului fata de ecran, parinte sau de elemen
 
 2. relative
     - mosteneste toate proprietatile schemei statice;
-    + poate fi deplasat fata de pozitia lui initiala cu ajutorul coordonatelor:
+    + poate fi deplasat fata de POZITIA LUI INITIALA cu ajutorul coordonatelor:
         *top, right, bottom, left fara a afecta elementele din preajma;
     se foloseste pt a deplasa obiectul LOCAL(in apropiere)
 
@@ -23,10 +23,10 @@ POZITION - un mod de amplasare a lementului fata de ecran, parinte sau de elemen
 3. absolute
     - un element independent fata de toate elementele din jur.
        elementul este mutat intr-o fereastra proprie, iar toate celelalte elemente trec dedesubt;
-    - se aplica aceleasi 4 coordonate insa se masoara de la marginea ferestrei (dreapta jos)
+    - se aplica aceleasi 4 coordonate insa se masoara de la MARGINEA FERESTREI(dreapta jos)
     - poate fi utilizat z-index
     - daca macar unul dintre parintii elementului pozitionat absolut nu este pozitionat static, atunci
-    coordonatele se masoara fata de acest parimte;
+    coordonatele se masoara FATA DE ACEST PARINTE;
 
 4. fixed
     - mosteneste toate proprietatile de la schema absoluta;
