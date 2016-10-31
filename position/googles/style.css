@@ -1,0 +1,50 @@
+body{
+  background-color: #001;
+}
+#map .forest{
+  background-image: url(forest.jpg);
+  background-position: left top;
+  background-attachment: fixed;
+  /*css filters - filtre photoshop in css*/
+  filter: blur(10px) grayscale(60%) brightness(0.3); /*daca nu suporte browserul, pune prefixul webkit*/
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+}
+
+#map .googles{
+  width: 400px;
+  height: 200px;
+  border: 1px dotted red;
+  position: absolute;
+  z-index: 1;
+}
+#map .googles div{
+  width: 200px;
+  height: 200px;
+  border-radius: 100%;
+  border: 10px solid black;
+  box-shadow: inset /*in interior*/ 0 0 10px 5px black;
+  position: absolute;
+  background-image: url(forest.jpg);
+  background-position: left top;
+  background-attachment: fixed;
+}
+#map .googles div:after{
+  content: "X";
+  display: block;
+  width: 200px;
+  height: 200px;
+  border-radius: 100%;
+  background: radial-gradinet(rgba(0,0,0,0), rgba(0,20,50,0.8));
+}
+#map .googles div:first-child{
+  left: 0;
+  top: 0;
+}
+#map .googles div:last-child{
+  right: 0;
+  top: 0;
+}

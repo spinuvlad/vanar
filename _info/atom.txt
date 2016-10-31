@@ -11,3 +11,5 @@ Ctrl+/ - cometeaza randul sau portiunea de cod
 
 lorem100 - genereaza automayt un text cu 100 cuvinte
 wrap din CTRL+SHIFT+P - aranjeaza textul din rand nou
+
+instaleaza: quick editor

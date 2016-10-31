@@ -1,0 +1,68 @@
+body{
+  background-color: black;
+}
+.preloader{
+  width: 200px;
+  height: 200px;
+  /*border: 1px dotted red;*/
+  position: absolute;
+}
+.preloader div:first-child{
+  width: 100px;
+  height: 200px;
+  /*background-color: green;*/
+  position: absolute;
+  top: 0;
+  left: 0;
+  overflow: hidden;    /*ce se va intampla daca elementul iese in afara parintelui*/
+}
+.preloader div:first-child:after{
+  content: "A";
+  display: block;
+  width: 190px;
+  height: 190px;
+  border: 5px solid lightgreen;
+  border-right-color: transparent;
+  border-bottom-color: transparent;
+  position: absolute;
+  transform: rotate(-45deg);
+  z-index: 1;
+  border-radius: 100%;
+  animation: rotA 3s linear infinite;
+}
+.preloader div:last-child{
+  width: 100px;
+  height: 200px;
+  /*background-color: blue;*/
+  position: absolute;
+  top: 0;
+  left: 100px;
+  overflow: hidden;
+}
+
+.preloader div:last-child:after{
+  content: "B";
+  display: block;
+  width: 190px;
+  height: 190px;
+  border: 5px solid lightgreen;
+  border-left-color: transparent;
+  border-top-color: transparent;
+  position: absolute;
+  transform: rotate(-45deg);
+  z-index: 1;
+  left: -100px;
+  border-radius: 100%;
+  animation: rotB 3s linear infinite;
+}
+@keyframes rotA{
+  0%{transform: rotate(135deg);}
+  50%{transform: rotate(-45deg)}
+  100%{transform: rotate(-45deg);}
+}
+@keyframes rotB{
+  0%{transform: rotate(135deg);}
+  50%{transform: rotate(135deg)}
+  100%{transform: rotate(-45deg);}
+}
+}
