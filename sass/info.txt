@@ -1,0 +1,22 @@
+sass/scss, less. stylus
+||| compass
+||| bourbon
+
+info:
+sass-lang.com
+sass-scss.ru
+
+sass - css + programing sau css + extended capabilities
+avantaje:
+ * automation;
+ * optimization;
+ * programing (structuri de control, variabile, operators, functions);
+ * more advanced selectors;
+ * autoprefixed (webkit, moz...);
+ ...
+
+ exemplu:
+ file.sass - > preprocesor (compiler) -> file.css
+
+se incepe de lucru cu "scss"
+plugins <<compass/bourbon... extind posibilitatile sass
