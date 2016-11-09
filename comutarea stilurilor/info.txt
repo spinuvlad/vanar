@@ -1,0 +1,29 @@
+css v.3 media queries
+permie activarea si dezactivarea stilurilor in dependenta de:
+ - tipul device-ului;
+ - parametrii device-ului
+ mdn css media querie - cauta pe google
+ Media features:
+  - width;
+  - height;
+  - orentation;
+  - pointer;
+  - etc
+
+  layout modern /adaptive/responsive:
+  5 screen + 1 print:
+  5->desktop / tablet-landscape / tablet-portrait / mobile-landscape / mobile - portrait
+  breakpointers (schimbul dintr-un regim in altul):
+  se ia statistica celor mai des utilizate deviceuri + dupa necesitatea machetei
+
+  1. <link rel="stylesheet" href="style.css" media="condition">
+  2. <style media="condition"> </style>
+  3. in css:
+  @media condition{
+  selector1{
+
+  }
+  selector2{
+  
+  }
+  }

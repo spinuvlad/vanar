@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>ex1 media queries</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <style>
+  body{
+    background-image: url(bg.jpg);
+    background-repeat: no-repeat;
+    background-color: #1bbc9b;
+  }
+  #login__form{
+    background-color: green;
+    position: relative;
+    top: 68px;
+    left: 80px;
+    opacity: 0.5;
+    width: 340px;
+    height: 165px;
+  }
+  #login__form div {
+    float: left;
+    background-color: red;
+    height: 100%;
+    width: 98px;
+  }
+  #login__form form {
+    float: right;
+    background-color: pink;
+    height: 135px;
+    width: 212px;
+    padding: 15px;
+  }
+  #login__form form input,
+  #login__form form button,
+  #login__form form a{
+    display: block;
+    padding: 7px;
+    width: 100%;
+    box-sizing: border-box; /*modul de calculare dimensiunii boxei. pe defoult sta: content-box - de la continut spre exterior*/
+  }
+ #login__form form input{
+      margin-bottom: 10px;
+  }
+#login__form form a{
+  text-align: center;
+  font-size: 10px;
+}
+#login__form form .fa{
+  display: block;
+  position: absolute;
+  right: 23px;
+  transform: translateY(-35px); /*aranjarea pe axa Y*/
+  color: #ccc; /*culoarea la iconite*/
+}
+
+  </style>
+</head>
+<body>
+  <!-- flat ui - design modern - cautare-->
+  <!-- https://www.google.com/search?q=flat+ui+login+form&espv=2&biw=1189&bih=787&tbm=isch&tbo=u&source=univ&sa=X&ved=0ahUKEwir0q20jZzQAhXHQBoKHbbbDbEQsAQIGQ#imgrc=g0OP4SecsIiatM%3A -->
+<!-- phantomjs.org - testeaza automat pe mai multe device-uri -->
+<!-- http://fontawesome.io/ - icon framework
+    https://cdnjs.com/libraries/font-awesome
+    alege
+  se indica indica la inceput:<link  https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css
+-->
+<section id="login__form">
+  <div>icon</div>
+  <form>
+<input type="text" name="login" placeholder="Enter your name">
+<i class="fa fa-user" aria-hidden="true"></i>
+<input type="password" placeholder="Password" name="password">
+<i class="fa fa-lock" aria-hidden="true"></i>
+<button>Login</button>
+<a href="#">Lost your password?</a>
+  </form>
+</section>
+
+</body>
+</html>
