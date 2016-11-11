@@ -1,0 +1,17 @@
+display (css) -> arata in ce mod sa se afiseze elementul;
+
+  * none <> ascunde complet elementul;
+
+  * inline <> transforma elementul block in element "linie" (transforma in text obisnuit);
+  * block <> element boxa;
+  * inline-block <> elemente boxe aranjate intr-un rand (se aseamanacu float);
+
+  * table-*  <>afisarea elementelor ca fiinda parte dintr-un tabel:
+            - table>table-row>table-cell;
+
+  * list-item  <> element al unei liste (asemanator cu "ul");
+
+  * flex (flexbox)  <> elementele sunt afisate in regim de boxa flexibila;
+            acest regim permite aranjarea inteligenta a item-ul in containerul parinte;
+
+            

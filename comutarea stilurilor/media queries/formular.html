@@ -12,12 +12,13 @@
   }
   #login__form{
     /*background-color: red;*/
-    position: relative;
-    top: 68px;
-    left: 80px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
     /*opacity: 0.5;*/
     width: 340px;
     height: 165px;
+    transform: translateX(-170px) translateY(-83px); /*centrare formular - jumatate din width si height*/
   }
   #login__form div:first-child {
     float: left;
@@ -25,6 +26,16 @@
     height: 165px;
     width: 98px;
   }
+  /*media querie:*/
+  @media screen and (max-width: 520px){
+  #login__form div:first-child{
+    display: none; /*ascunde blocul cu plic cand dimensiunea ferestrei e mai mica de 520px*/
+  }
+  #login__form{
+    transform: translateX(-210px) translateY(-83px); /*muta la stanga pe x cu 210px pt a centra*/
+  }
+}
+  /*plicul:*/
   #login__form div:first-child div:first-child{
     /*width: 66px;
     height: 40px;*/
