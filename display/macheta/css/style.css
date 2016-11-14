@@ -19,7 +19,7 @@ header:after{
   position: absolute;
   width: 100vw; /*pe toata latimea ferestrei*/
   height: 100vh; /*pe toata inaltimea ferestrei*/
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(0, 0, 0, 0.5); /*culoare negru transparent*/
   top: 0;
   left: 0;
 }
@@ -34,4 +34,30 @@ header h2,
 header p{
   position: relative;
   z-index: 10;
+  color: white;
+}
+header h2{
+  font-weight: normal;
+  font-size: 60px;
+  letter-spacing: 5px;
+  margin-top: 120px;
+}
+header p{
+  font-size: 18px;
+  font-weight: 600;
+  letter-spacing: 2px;
+  font-variant: inherit;
+  margin-top: -40px;
+}
+header a{
+  display: inline-block;
+  text-decoration: none;
+  width: 180px;
+  height: 50px;
+  margin-top: 50px;
+  background-color: #008ed6;
+  border-radius: 4px;
+  line-height: 50px;
+  font-size: 20px;
+  letter-spacing: 1px;
 }
