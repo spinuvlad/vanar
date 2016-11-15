@@ -1,5 +1,6 @@
 INSTALL GIT:
 1.download git from: https://git-for-windows.github.io/
+comanda din terminal: sudo apt-get install git-all
 2.install this programm
 3.open cmd
 
