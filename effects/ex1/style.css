@@ -1,0 +1,35 @@
+body{
+  margin: 0;
+  height: 2000px;
+}
+header{
+  background: linear-gradient(#456789, #987263, green);
+  padding: 20px;
+  text-align: center;
+}
+header svg{
+  animation: flashing 1s infinite;
+}
+@keyframes flashing{
+  from{ -webkit-filter: drop-shadow(0 0 1px white); }
+    to{ -webkit-filter: drop-shadow(0 0 15px #007700); }
+}
+#corner{
+  /*fill: red;*/
+  animation: flash__corner 1s infinite;
+}
+@keyframes flash__corner{
+  from{ transform: translateY(-10px); }
+    to{ transform: translateY(0px); }
+}
+
+/*parallax:*/
+.parallax__section{
+  height: 600px;
+  background: transparent;
+}
+
+
+/*jquery paralax
+pixelcog.github.io/parallax.js
+*/
