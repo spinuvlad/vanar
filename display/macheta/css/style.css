@@ -137,3 +137,44 @@ nav ul a:hover{
   display: inline-block;
   width: 33%;
 }
+section div h2{
+  font-size: 60px;
+  font-weight: 100;
+  text-align: center;
+}
+section div p{
+  text-align: center;
+  font-size: 18px;
+  margin-top: -40px;
+}
+section div h2:after{
+  display: block;
+  content: "";
+  width: 150px;
+  height: 1px;
+  background-color: #008ed6;
+  margin-left: 44%;
+  margin-top: 20px;
+}
+section div h2:before{
+  display: block;
+  content: "";
+  width: 150px;
+  height: 1px;
+  background-color: #008ed6;
+  left: 44%;
+  position: relative;
+  top: 150px;
+}
+section div img{
+  width: 50%;
+  margin-left: 24%;
+  margin-top: 40px;
+}
+.col__1__3 ul:first-child{
+  position: absolute;
+  top:0;
+}
+section div:last-child{
+  position: relative;
+}
