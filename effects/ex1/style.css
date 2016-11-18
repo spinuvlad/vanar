@@ -1,6 +1,7 @@
 body{
   margin: 0;
   height: 2000px;
+  background-color: sliver;
 }
 header{
   background: linear-gradient(#456789, #987263, green);
@@ -28,8 +29,47 @@ header svg{
   height: 600px;
   background: transparent;
 }
-
-
-/*jquery paralax
+#s1, #s2, #s3{
+  background-color: green;
+  color: white;
+  padding: 300px;
+  border-bottom: 5px solid darkgreen;
+}
+#slider img{
+  width: 100%;
+  height: 500px;
+}
+#slider {
+  width: 90%;
+  margin-left: 5%;
+  position: relative;
+}
+.slick-prev{   /*acesti selectori sunt generati de js. poate fi gasit prin inspector*/
+  background-color: red;
+  position: absolute;
+  left: 0;
+  z-index: 100;
+}
+.slick-next{
+  background-color: red;
+  position: absolute;
+  right: 0;
+  z-index: 100;
+}
+.slick-dots{
+  position: absolute;
+  bottom: 40px;
+  z-index: 100;
+}
+/*jquery paralax biblioteca
 pixelcog.github.io/parallax.js
+
+scrooling lent apasand pe link biblioteca:
+plugins.compzets.com/animatescroll/#   -->alege: usage -->download from github
+alege: animatescroll.min.js  -->RAW  -->ctrl+S
+vezi in Usage cum se aleg selectorii:
+ <a onclick="$('[jquery selector]').animatescroll([options]);">Go to Element</a>
+
+ biblioteca slider jquery:
+kenwheeler.github.io/slick   ->usage
 */

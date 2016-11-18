@@ -3,6 +3,9 @@
 <head>
   <meta charset="UTF-8">
   <title>web libraries</title>
+
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/jquery.slick/1.6.0/slick.css"/>  <!--slider -->
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/jquery.slick/1.6.0/slick-theme.css"/> <!--conecteaza tema pt slider-->
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -26,11 +29,48 @@
       <h2>
         Hello parallax
       </h2>
-    </section>
+
+
+        </section>
+      <ul>
+        <li><a href="#s1" onclick="$('#s1').animatescroll();">Section 1</a></li>
+        <li><a href="#s2" onclick="$('#s2').animatescroll();">Section 2</a></li>
+        <li><a href="#s3" onclick="$('#s3').animatescroll({ scrollSpeed: 200});">Section 3</a></li>  <!--scrollSpeed: milisecunde-->
+      </ul>
+
+      <section id="slider">
+        <div><img src="http://lorempixel.com/output/abstract-q-c-640-480-3.jpg" alt=""></div>
+        <div><img src="http://lorempixel.com/output/fashion-q-c-640-480-7.jpg" alt=""></div>
+        <div><img src="http://lorempixel.com/output/fashion-q-c-640-480-10.jpg" alt=""></div>
+      </section>
+
+
+      <section id="s1">
+        Section 1
+      </section>
+      <section id="s2">
+        Section 2
+      </section>
+      <section id="s3">
+        Section 3
+      </section>
+
 
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
 <script src="parallax.min.js"></script>
+<script src="animatescroll.min.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/jquery.slick/1.6.0/slick.min.js"></script> <!--script pt slider de pe net direct-->
+<script type="text/javascript">
+  $(document).ready(function(){
+    $('#slider').slick({
+      autoplay: true,
+      autopaySpeed: 1000,
+      arrows: true,
+      dots: true
+    });
+  });
+</script>
 
 </body>
 </html>
