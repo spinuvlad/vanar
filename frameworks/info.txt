@@ -1,0 +1,29 @@
+frameworks: biblioteci/platforme
+  -- platforms << libraries (testate impreuna)
+  -- tests;
+  -- updates;
+  -- bug/issues - fix (inlaturare de erori);
+  -- cross browser (compatibil cu toate);
+  -- responsive;
+  -- popular elemets (menu, forms, windows, slider etc);
+  -- grid (retele de machetare);
+  ...
+
+  cauta info in google: popular css frameworks
+  what are Frameworks?
+
+  recomandate: pure.css
+              materialize
+              fondation
+              materialUI
+              onsenUI
+
+mai simplu:
+getbootstrap.com
+bootstrap-3.ru
+
+foundation.zurb.com
+
+materializecss.com  >> creat de google adaptiv pt android
+
+w3schools.com/w3css  >> cel mai simplu

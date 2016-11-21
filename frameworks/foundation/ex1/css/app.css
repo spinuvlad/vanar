@@ -1,0 +1,9 @@
+.height{
+  height: 2000px;
+}
+.x-full-width{
+  width: 100%;
+}
+.js-dropdown-active{  /*selectorul se ia din js gasit prin inspector*/
+  z-index: 1000;
+}
