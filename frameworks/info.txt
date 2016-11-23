@@ -27,3 +27,15 @@ foundation.zurb.com
 materializecss.com  >> creat de google adaptiv pt android
 
 w3schools.com/w3css  >> cel mai simplu
+
+
+
+
+grid: reteele. aranjarea elementelor
+impartirea paginii in diferite zone
+4 tipuri:
+  -- Manuscript  -- container
+  -- column grid  -- containerul este impartit in coloane (default 12 coloane)
+  -- modular grid -- blocuri pe orizontala si verticala
+
+  -- hierarchical grig -- se aliniaza in dependenta de continut (se aplica rar)
