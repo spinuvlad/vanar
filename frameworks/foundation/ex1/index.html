@@ -12,9 +12,9 @@
     <div>
       <!-- http://foundation.zurb.com/sites/docs/dropdown-menu.html -->
       <ul class="dropdown menu" data-dropdown-menu data-click-open="true" data-disable-hover="true">
-        <li><a href="#">Sign In</a></li>
-        <li><a href="#">Sign Up</a></li>
-        <li>
+        <li class="x-navigation"><a href="#">Sign In</a></li>
+        <li class="x-navigation"><a href="#">Sign Up</a></li>
+        <li class="x-navigation">
           <a href="#">EN</a>
           <ul class="menu" >
             <li><a href="#">EN</a></li>
@@ -53,6 +53,40 @@
   </button>
   <!-- cauta "orbit" - incorporare slider -->
   </div>
+  <section class="orbit" role="region" data-timer-delay="1000" aria-label="coputing technologies" data-orbit data-options="animInFromLeft:fade-in; animInFromRight:fade-in; animOutToLeft:fade-out; animOutToRight:fade-out;">
+    <ul class="orbit-container">
+      <button class="orbit-previous"><span class="show-for-sr">Previous Slide</span>&#9664;&#xFE0E;</button>
+      <button class="orbit-next"><span class="show-for-sr">Next Slide</span>&#9654;&#xFE0E;</button>
+
+      <li class="is-active orbit-slide">
+          <img src="images/1.jpg" alt="1 img" class="orbit-image" />
+      </li>
+
+      <li class="is-active orbit-slide">
+          <img src="images/2.jpg" alt="2 img" class="orbit-image" />
+      </li>
+
+      <li class="is-active orbit-slide">
+          <img src="images/3.jpg" alt="3 img" class="orbit-image" />
+      </li>
+
+      <li class="is-active orbit-slide">
+          <img src="images/4.jpg" alt="4 img" class="orbit-image" />
+      </li>
+
+      <li class="is-active orbit-slide">
+          <img src="images/5.jpg" alt="5 img" class="orbit-image" />
+      </li>
+    </ul>
+
+    <nav class="orbit-bullets">
+      <button class="is-active" data-slide="0"> <span class="show-for-sr">Primul slide</span><span class="show-for-sr">Slaidul curent</span> </button>
+      <button data-slide="1"><span class="show-for-sr">slideul nr.2</span></button>
+      <button data-slide="2"><span class="show-for-sr">slideul nr.3</span></button>
+      <button data-slide="3"><span class="show-for-sr">slideul nr.4</span></button>
+      <button data-slide="4"><span class="show-for-sr">slideul nr.5</span></button>
+    </nav>
+  </section>
     <div class="height"></div>
     <script src="js/vendor/jquery.js"></script>
     <script src="js/vendor/what-input.js"></script>

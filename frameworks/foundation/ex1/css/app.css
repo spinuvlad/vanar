@@ -7,3 +7,60 @@
 .js-dropdown-active{  /*selectorul se ia din js gasit prin inspector*/
   z-index: 1000;
 }
+.x-navigation{
+  background-color: red;
+  position: relative;
+  margin: 5px;
+}
+.orbit{
+  left:50px;
+  width: 600px;
+  position: relative;
+  top: 100px;
+}
+.orbit-bullets{
+  position: relative;
+  bottom: 50px;
+}
+.orbit-image{
+  border-radius: 100%;
+}
+.orbit-bullets button{
+  background-color: yellow;
+  box-shadow: 0 0 2px 2px yellow;
+}
+.orbit-bullets button.is-active{
+  background-color: green;
+  box-shadow: 0 0 2px 2px green;
+}
+.orbit-bullets button:hover{
+  background-color: red;
+  box-shadow: 0 0 2px 2px red;
+}
+.orbit-container{
+  position: relative;
+}
+.orbit-previous,
+.orbit-next{
+  position: absolute;
+  top: 280px;
+  z-index: 1000;
+  color: white;
+  font-size: 30px;
+}
+.orbit-previous:hover,
+.orbit-next:hover{
+  background-color: transparent;
+  font-size: 40px;
+  transition: 0.2s;
+}
+.orbit-previous:focus,
+.orbit-next:focus{
+  background-color: transparent;
+}
+.orbit-previous{
+  margin-left: 250px;
+}
+.orbit-next{
+  margin-right: 250px;
+}
