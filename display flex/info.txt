@@ -1,0 +1,12 @@
+display flex - un regim ultramodern de amplasare a elementelor, care imbina
+tot ce-i mai bun si mai adauga cateva lucruri.
+
+in regimul display flex elementele se impart in 2 elemenete de baza:
+  -  parinte si copil (container. item-flex)
+
+  - itemul poate fi aranja fata de parinte, vecini, fata de sine
+
+  - se aranjeaza dupa axa principala:"main - orizontal", "cros - vertical"
+
+  main start
+  main end

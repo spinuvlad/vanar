@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>display flex</title>
+  <style>
+    .container{
+      width: 600px;
+      height: 400px;
+      background-color: green;
+      font-size: 30px;
+      color: white;
+
+      display: flex;
+      flex-direction: row;
+      align-content: flex-end;
+      justify-content: space-between; /*container: aliniaza elementele dupa axa principala: flex-start, flex-end,
+                      space-between, space-around, center;
+      /*padding: 20px;*/
+
+    }
+
+    /*mdn css flex
+  flex-direction:  column
+  flex-direction:  column-reverse
+  flex-direction:  row
+  flex-direction:  row-reverse
+
+  align-item (container): flex-star, flex-end, center, baseline, stretch - aranjare pe verticala
+  align-self: la nivel de item, aliniere fata de rand.
+
+  proprietati de redimensionare:
+  flex-grow - proportile de marire
+  flex-shrink - proprietati de micsoare
+
+    */
+    .item{
+      background-color: rgba(50,200,50,0.7);
+
+    flex-grow: 1;
+      margin:10px;
+    }
+    .item:nth-child(2){
+      order:-1;   /*lucreaza asemenea z-index cand parintele are display: flex; */
+    flex-grow: 2; /*elementul se intinde pe spatiul dispinibil*/
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="item">1</div>
+    <div class="item">2A<br>2B</div>
+    <div class="item">3</div>
+  </div>
+</body>
+</html>
