@@ -1,0 +1,23 @@
+sablon: http://getbootstrap.com/getting-started/#template
+
+setka: CSS --> Grid system -->Grid options
+
+structura:
+<div class="row">  <!--avem la dispozitie 12 coloane -->
+    <div class="col-md-4"></div>
+    <div class="col-md-4"></div>
+    <div class="col-md-4"></div>
+</div>
+
+containerul parinte cu class="container" - va lasa margini in parti,
+          daca i se da class="container-fluid" - va fi fara margini
+
+col-md-offset-2    - misca coloanele in dreapta cu 2 unitati
+hidden-sm          - ascunde blocul pt monitoare "sm"-mici
+visible-lg         - afiseaza blocul blocul pt monitoare "lg"-mari
+
+
+<button type="button" class="navbar-toggle" data-toggle="" data-target="">  </button>
+class="navbar-toggle" - raspunde de afisarea si ascunderea navigatiei la diferite dimensiuni de ecrane
+data-toggle="collapse"
+data-target="#identificator personal"
