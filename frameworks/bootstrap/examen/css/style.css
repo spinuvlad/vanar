@@ -1,9 +1,10 @@
 header{
-  background-image: url(../images/bg.jpg);
-  background-position: top; /*sa afiseze de sus in jos*/
+  /*background-image: url(../images/4.jpg);
+  background-position: center; */
+  /*sa afiseze de sus in jos*/
   background-size: cover; /*adaptare dupa fereastra*/
   width: 100%;
-  height: 1000px; /*100vh - 100% din inaltimea ferestrei*/
+  height: 100vh; /*100vh - 100% din inaltimea ferestrei*/
   font-family: "Open Sans", sans-serif;
 }
 a:link{
@@ -40,6 +41,10 @@ header nav ul .dropdown-menu{
   background-color: transparent;
   border-color: transparent;
   box-shadow: none;
+  right: auto !important; /*rezolva problema cu meniul in jos*/
+}
+header ul.nav li.dropdown:hover > ul.dropdown-menu {
+    display: block;
 }
 .navbar-default .navbar-nav > .open > a,
 .navbar-default .navbar-nav > .open > a:hover,
@@ -179,7 +184,7 @@ header .container .head-col-4{
   width: 120px;
   height: 45px;
   background-color: #1B99B9;
-  color: white;
+  color: white !important;
   border-color: #1887a3;
   border-radius: 4px;
   transition: 0.4s;
@@ -195,7 +200,7 @@ header .container .head-col-4{
 
 /*section 2 column 2*/
 .sec2-col2{
-  background-color: blue;
+  /*background-color: blue;*/
   margin-top: 50px;
 }
 .test{
